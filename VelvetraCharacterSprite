@@ -1,31 +1,9 @@
-print ( "A wild Velvetra apeared before you! ") 
-
-
-
-def velvetraFunction ():
-  print ("          _____./\_/\_/\_/\.______")
-  print ("      ___(     |  _     _  |      )_ _ _")
-  print ("  ___(         | |_\   /_| |      ) ) )__" )
-  print (" (_____        |  |\/\/\|  |     /   /   )")
-  print ("       (_      |  |_____|  |    /   /     )_____") 
-  print ("     ___(      |___________|   /   /         ___)")
-  print ("    (__   _________/   \______/   /      ____)")
-  print ("       (_|        /     \        /     __)")
-  print ("         |    ---/       \------/______)")
-  print ("         |   |(_/_________\_____)")
-  print ("         |   |   |  | |  |")
-  print ("         |   |   \  \ /  /")
-  print ("         |   |    \     /")
-  print ("         ( ( (     |___|")
-  print ("          - - -") 
-  
-velvetraFunction() 
 
 def velvetraAttack (): 
   print ("          _____./\_/\_/\_/\.______")
-  print ("      ___(     |  _\   /_  |      )_ _ _")
-  print ("  ___(         | |_\   /_| |      ) ) )__")
-  print (" (             | |_\   /_| |             )")
+  print ("      ___(     |  _\   /_  |      )______")
+  print ("  ___(         | |_\   /_| |      _ _ _  )_")
+  print (" (             | |_\   /_| |      ) ) )  __)")
   print (" (_____        |  |\/\/\|  |     /   /   )")
   print ("       (_      |  |     |  |    /   /     )_____" )
   print ("     ___(      |__|_   _|__|   /   /         ___)")
@@ -40,3 +18,5 @@ def velvetraAttack ():
   print ("          - - -" )
 
 velvetraAttack()
+
+print ( "A wild Velvetra apeared before you! ") 
