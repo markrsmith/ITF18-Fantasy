@@ -1,0 +1,18 @@
+                             
+def dodecahedrenBrother():
+  print ( "       _________________________       " )                                  
+  print ( "      / \                     / \      " )           
+  print ( "     /   \___________________/   \     " )                    
+  print ( "    /    /_______     _______\    \    " )        
+  print ( "   /    /        \   /        \    \   " )                  
+  print ( "  /    /  *****   \ /  *****   \    \  " )        
+  print ( " /____|  ********  |  ********  |____\ " )
+  print ( " \    \\   ******  / \  ******   /    /" )               
+  print ( "  \    \\_________/   \_________/    / " )
+  print ( "   \    \                     /    /   " )                           
+  print ( "    \    \      ------       /    /    " )                            
+  print ( "     \    \_________________/    /     " )             
+  print ( "      \   /                 \   /      " )                 
+  print ( "       \ /___________________\ /       " )                 
+dodecahedrenBrother()
+  print ("Kevins Brother the Dodecahedren appeared before you!")
