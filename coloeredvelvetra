@@ -1,0 +1,33 @@
+from colorama import Fore, Back, Style 
+def velvetraAttack (): 
+  print (Fore.LIGHTRED_EX + "          _____" + Style.RESET_ALL + Fore.LIGHTYELLOW_EX + "./\_/\_/\_/\." + Style.RESET_ALL + Fore.LIGHTRED_EX + "______")
+  print (Style.RESET_ALL + Fore.LIGHTRED_EX + "      ___(" + Style.RESET_ALL + Fore.RED +  "     |  _\   /_  |      " + Style.RESET_ALL + Fore.LIGHTRED_EX + ")" + Style.RESET_ALL + Fore.RED + "_ _ _")
+  print (" " + Style.RESET_ALL + Fore.LIGHTRED_EX + " ___(  " + Style.RESET_ALL + Fore.RED + "       | |_\   /_| |       ) ) )" + Style.RESET_ALL + Fore.LIGHTRED_EX + "_")
+  print (" ( " + Style.RESET_ALL + Fore.RED + "            | |_\   /_| |      /   /  " + Style.RESET_ALL + Fore.LIGHTRED_EX + ")")
+  print (" " + Style.RESET_ALL + Fore.LIGHTRED_EX + "(_____   " + Style.RESET_ALL + Fore.RED + "     |  |\/\/\|  |     /   /  " + Style.RESET_ALL + Fore.LIGHTRED_EX + " )")
+  print (" " + Style.RESET_ALL + Fore.LIGHTRED_EX + "      (_    " + Style.RESET_ALL + Fore.RED + "  |  |     |  |    /   /   " + Style.RESET_ALL + Fore.LIGHTRED_EX + "  )_____" )
+  print ("  " + Style.RESET_ALL + Fore.LIGHTRED_EX + "   ___(  " + Style.RESET_ALL + Fore.RED + "    |__|_   _|__|   /   /         " + Style.RESET_ALL + Fore.LIGHTRED_EX + "___)")
+  print ("    (__"+ Style.RESET_ALL + Fore.RED +"   _________/" + Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + "|||" + Style.RESET_ALL + Fore.RED +"\______/   /      " + Style.RESET_ALL + Fore.LIGHTRED_EX + "____)")
+  print (Style.RESET_ALL + Fore.LIGHTRED_EX +"       (_" + Style.RESET_ALL + Fore.RED + "|        /" + Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + " ||| " + Style.RESET_ALL + Fore.RED +"\        /     " + Style.RESET_ALL + Fore.LIGHTRED_EX + "__)")
+  print (Style.RESET_ALL + Fore.RED +"         |    ---/" + Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + "  \|/ " + Style.RESET_ALL + Fore.RED +" \------/" + Style.RESET_ALL + Fore.LIGHTRED_EX + "______)")
+  print (Style.RESET_ALL + Fore.RED +"         |   |" + Style.RESET_ALL + Fore.LIGHTRED_EX + "(_"+Style.RESET_ALL + Fore.RED +"/_________\ " + Style.RESET_ALL + Fore.LIGHTRED_EX + "______)")
+  print (Style.RESET_ALL + Fore.RED +"         |   |   |  | |  |")
+  print ("         |   |   \  \ /  /")
+  print ("         |   |    \     /")
+  print ("         ( ( (     |___|" )
+  print ("          - - -" )
+
+velvetraAttack() 
+print (Style.RESET_ALL + "The Eclipse Warrior, Velvetra apeared before you! ")
+hP = 10 
+while True: 
+  velvetra = str(input("Do you want to attack Velvetra? [yes/no]"))
+  if velvetra == 'yes':
+    hP = hP - 1
+    print ("You have", hP, " Life Points remaining.")
+  elif velvetra == 'no':
+    print ("'Foolish mortal do you think you can escape me?! But don't worry i'll let you go free, but next time I will make your death painfully slow.  HA, ha, ha, ha!' You have", hP, "Life Points remaining.")
+    break
+  if hP == 0:
+    print ("Velvetra killed you! " + Style.RESET_ALL + Fore.LIGHTRED_EX + " Taking your soul to the Relem of Monsters. . .")
+    break
