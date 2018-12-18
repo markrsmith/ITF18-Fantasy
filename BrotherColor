@@ -1,0 +1,18 @@
+from colorama import Fore, Back, Style                 
+def dodecahedrenBrother():
+  print (Fore.LIGHTBLUE_EX + "       _________________________       " )      
+  print ( "      / \                     / \      " )           
+  print ( "     /   \___________________/   \     " )                    
+  print ( "    /    /_______     _______\    \    " )        
+  print ( "   /    /        \   /        \    \   " )                  
+  print ( "  /    / " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "*****" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "    \ /  " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "*****" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "   \    \  " )        
+  print ( " /____|  " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "********" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + " || " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "********" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "   |____\ " )
+  print ( " \    \\   " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "******" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "  /\  " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "******" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "    /    /" )               
+  print ( "  \    \\_________/  \__________/    / " )
+  print ( "   \    \                     /    /   " )                           
+  print ( "    \    \ " + Style.RESET_ALL + Fore.BLUE +"     ------     " + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "  /    /    " )                 
+  print ( "     \    \_________________/    /     " )             
+  print ( "      \   /                 \   /      " )                 
+  print ( "       \ /___________________\ /       " )                 
+dodecahedrenBrother()
+  
