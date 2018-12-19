@@ -1,0 +1,912 @@
+import sys, random, time
+PlayerHealth = 0
+ClassType = 0
+def EvilCube():
+    print("___________________")
+    print("|                 |\  ")
+    print("|                 | \ ")
+    print("|   ()     ()     |  |")
+    print("|                 |  |")
+    print("|    \______/     |  |")
+    print("|                 |  /")
+    print("|                 | /")
+    print("___________________/")
+def Goblin():
+      print("     /\______/\        ")
+      print("    ( (O)  (O) )          ")
+      print("     \  ____  /                ")
+      print("    __\______/__                 ")
+      print("    //  |  |  \\\                  ")
+      print("   //   |  |   \\\      !!              ")
+      print("  //    |  |  ==\\\=========D                        ")
+      print("       //  \\\        {____}                    ")
+      print("      //    \\\                                ")
+      print("     //      \\\                                  ")
+def ThanosCar():
+      print("                             ______________________________           ")
+      print("                            / _____                | ( ') |\               ")
+      print("                           /  |   |     _______    |__|\__| \              ")
+      print("          ________________/   |___|    |       |             \____________ ")
+      print("         | |_____|       ||            |       |                |    ____ |")
+      print("         | /     \_______||            |      -|                | __/    \|")
+      print("         |/______ |      \|            |       |                |/ ______ |")
+      print("         |/\    /\|______||____________|_______|________________|_/\    /\|")
+      print("           _\__/_                                                  _\__/_  ")
+      print("          /      \                                                /      \ ")
+      print("        (          )                                            (          ")
+      print("        |          |                                            |          |")
+      print("        (          )                                            (          )")
+      print("          \______/                                                \______/  ")
+def Wizard():
+  print("        /\       " )
+  print("       /  \      " )
+  print("     ( O O  )    " )
+  print("     _| ~  |_       ")
+  print("    // |  | \\\       ")
+  print("   //  |  | =\\\==---- " )
+  print("       |  |           " )
+  print("      // \\\       " )
+  print("     //   \\\      " )
+def babyDragon():
+  print(Fore.LIGHTBLACK_EX + "      *" + Style.RESET_ALL + Fore.YELLOW + "            /" + Style.RESET_ALL + Fore.LIGHTRED_EX + "          ________----/")
+  print(Fore.LIGHTBLACK_EX +"    **" + Style.RESET_ALL  +"            " + Fore.YELLOW + "/(" + Style.RESET_ALL + Fore.LIGHTRED_EX + "    ___---     ______/")
+  print(Fore.LIGHTBLACK_EX +"   **" + Style.RESET_ALL + Fore.LIGHTGREEN_EX +"         __" + Fore.YELLOW + "/" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "__" + Style.RESET_ALL + Fore.YELLOW + "|" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "__" + Fore.LIGHTRED_EX + "/     ____--")         
+  print(Fore.LIGHTBLACK_EX +"    ***" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + " _____/" + Style.RESET_ALL + Fore.LIGHTRED_EX + "6" + "      " + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "\ "+Style.RESET_ALL + Fore.LIGHTRED_EX +"  --")              
+  print(Fore.LIGHTBLACK_EX +"       *" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "\/            \ " + Style.RESET_ALL + Fore.LIGHTRED_EX + "/")
+  print(Fore.LIGHTGREEN_EX + "         \______       \ ")                                          
+  print(Fore.LIGHTGREEN_EX +"                \       \        " + Fore.YELLOW + "/       /        /       /")             
+  print(Style.RESET_ALL + Fore.LIGHTGREEN_EX + "                 \       \   " + Style.RESET_ALL + Fore.YELLOW + "  /(      /(       /(      /(")                 
+  print(Style.RESET_ALL + Fore.LIGHTGREEN_EX + "                  \       ---_" + Style.RESET_ALL + Fore.YELLOW + "/" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "__" + Style.RESET_ALL + Fore.YELLOW + "|" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "____" + Style.RESET_ALL + Fore.YELLOW + "/" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "__" + Style.RESET_ALL + Fore.YELLOW + "|" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "____-" + Style.RESET_ALL + Fore.YELLOW + "/" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "--" + Style.RESET_ALL + Fore.YELLOW + "|" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "----" + Style.RESET_ALL + Fore.YELLOW + "/" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "--" + Style.RESET_ALL + Fore.YELLOW +"|" + Style.RESET_ALL + Fore.LIGHTGREEN_EX + "__")                                            
+  print("                   |                                         -----___")                      
+  print("                   |                                                 ---__")             
+  print("                   |    /                                                  -__")        
+  print("                  | |  /                         \                            -___")
+  print("                 |   |        /        _____     |          /-------____          -_")
+  print("                |    ||       |___-----    |----|          /            --_____     --_")
+  print("               |    |  |      |             |    |         \                   -__     -_")     
+  print("               |___|   |     |               |_   |_        |                     --_    -_       ______")
+  print("                       |     |                 |_   |_      |                        --_   -____-- __--/")
+  print("                     _|    |                     _\  _\    |                            -_______--")     
+  print("                    (_____/                     (___(_____/")                                         
+def dodecahedrenBrother():
+  print (Fore.LIGHTBLUE_EX + "       _________________________       " )      
+  print ( "      / \                     / \      " )           
+  print ( "     /   \___________________/   \     " )                    
+  print ( "    /    /_______     _______\    \    " )        
+  print ( "   /    /        \   /        \    \   " )                  
+  print ( "  /    / " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "*****" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "    \ /  " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "*****" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "   \    \  " )        
+  print ( " /____|  " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "********" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + " || " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "********" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "   |____\ " )
+  print ( " \    \\   " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "******" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "  /\  " + Style.RESET_ALL + Fore.LIGHTBLACK_EX + "******" + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "    /    /" )               
+  print ( "  \    \\_________/  \__________/    / " )
+  print ( "   \    \                     /    /   " )                           
+  print ( "    \    \ " + Style.RESET_ALL + Fore.BLUE +"     ------     " + Style.RESET_ALL + Fore.LIGHTBLUE_EX + "  /    /    " )                 
+  print ( "     \    \_________________/    /     " )             
+  print ( "      \   /                 \   /      " )                 
+  print ( "       \ /___________________\ /       " )           
+def Thief():
+  print ("                      __________                                    ")
+  print ("                      \_\_\_\_\_\                                   ")
+  print ("                      /          \                                  ")
+  print ("                     /  \      /  \                                 ")
+  print ("                     | (O)    (O) |                                 ")
+  print ("                     \   ______   /                                 ")
+  print ("                      \__________/                                  ")
+  print ("                      __|      |__                                  ")
+  print ("                     // |      | \\\                                ")
+  print ("                    //  |      |  \\\                               ")
+  print ("          !!       //   |      |   \\\       !!                     ")
+  print ("       (==========//==@ |      | @==\\\==========)                  ")
+  print ("        {____}          |______|           {____}                   ")
+  print ("                        //    \\\                                   ")
+  print ("                       //      \\\                                  ")
+  print ("                      //        \\\                                 ")
+  print ("                     //          \\\                                ")
+def agressiveSnake ():
+  print (Fore.GREEN + "   ____^____ ")                                  
+  print ("  /--\ ^ /--\ ")                                                                  
+  print (" / [" + Style.RESET_ALL + Fore.LIGHTYELLOW_EX + "0" + Style.RESET_ALL + Fore.GREEN + "> ^ <" + Style.RESET_ALL + Fore.LIGHTYELLOW_EX + "0" + Style.RESET_ALL + Fore.GREEN + "] \ ")                                      
+  print (" |     ^     |  ")                               
+  print (" / ----^---- \   ")                                      
+  print ("| -----^----- |  ")                                     
+  print (" \  ---^---   /                 ______________")          
+  print (" |\  A    A  /             __---             -|__")             
+  print (" | \________/           __-                      |")
+  print (" |  " + Style.RESET_ALL + "\/" + Style.RESET_ALL + Fore.GREEN + "." + Style.RESET_ALL + Fore.RED + "|" + Style.RESET_ALL + Fore.GREEN + ".." + Style.RESET_ALL +  "\/" + Style.RESET_ALL + Fore.RED + "   \/" + Style.RESET_ALL + Fore.GREEN + "    __-       ___---_            |")
+  print ("|   ..."+ Style.RESET_ALL + Fore.RED + "|" + Style.RESET_ALL + Fore.GREEN + ".|"+ Style.RESET_ALL + Fore.RED + "  ___|"  + Style.RESET_ALL + Fore.GREEN + "  ---______----       |            |")             
+  print ("|   ..." + Style.RESET_ALL + Fore.RED + "|_" + Style.RESET_ALL + Fore.GREEN + Style.RESET_ALL + Fore.GREEN + "|" + Style.RESET_ALL + Fore.RED + "_|"+ Style.RESET_ALL + Fore.GREEN + "                           |            |")    
+  print ("|  .......|                            |            |")      
+  print (" |  ......|                    _______|            _|")        
+  print (" |  .......|            ___----                   _|")                      
+  print ("  |  ...... |_    ___---                        _--")        
+  print ("   |  ......  ----                           _--")                 
+  print ("   |                                     ___-")           
+  print ("    |                               __---")        
+  print ("     |                            _-")
+  print ("      -________________________---") 
+from colorama import Fore, Back, Style 
+def velvetraAttack (): 
+  print (Fore.LIGHTRED_EX + "          _____" + Style.RESET_ALL + Fore.LIGHTYELLOW_EX + "./\_/\_/\_/\." + Style.RESET_ALL + Fore.LIGHTRED_EX + "______")
+  print (Style.RESET_ALL + Fore.LIGHTRED_EX + "      ___(" + Style.RESET_ALL + Fore.RED +  "     |  _\   /_  |      " + Style.RESET_ALL + Fore.LIGHTRED_EX + ")" + Style.RESET_ALL + Fore.RED + "_ _ _")
+  print (" " + Style.RESET_ALL + Fore.LIGHTRED_EX + " ___(  " + Style.RESET_ALL + Fore.RED + "       | |_\   /_| |       ) ) )" + Style.RESET_ALL + Fore.LIGHTRED_EX + "_")
+  print (" ( " + Style.RESET_ALL + Fore.RED + "            | |_\   /_| |      /   /  " + Style.RESET_ALL + Fore.LIGHTRED_EX + ")")
+  print (" " + Style.RESET_ALL + Fore.LIGHTRED_EX + "(_____   " + Style.RESET_ALL + Fore.RED + "     |  |\/\/\|  |     /   /  " + Style.RESET_ALL + Fore.LIGHTRED_EX + " )")
+  print (" " + Style.RESET_ALL + Fore.LIGHTRED_EX + "      (_    " + Style.RESET_ALL + Fore.RED + "  |  |     |  |    /   /   " + Style.RESET_ALL + Fore.LIGHTRED_EX + "  )_____" )
+  print ("  " + Style.RESET_ALL + Fore.LIGHTRED_EX + "   ___(  " + Style.RESET_ALL + Fore.RED + "    |__|_   _|__|   /   /         " + Style.RESET_ALL + Fore.LIGHTRED_EX + "___)")
+  print ("    (__"+ Style.RESET_ALL + Fore.RED +"   _________/" + Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + "|||" + Style.RESET_ALL + Fore.RED +"\______/   /      " + Style.RESET_ALL + Fore.LIGHTRED_EX + "____)")
+  print (Style.RESET_ALL + Fore.LIGHTRED_EX +"       (_" + Style.RESET_ALL + Fore.RED + "|        /" + Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + " ||| " + Style.RESET_ALL + Fore.RED +"\        /     " + Style.RESET_ALL + Fore.LIGHTRED_EX + "__)")
+  print (Style.RESET_ALL + Fore.RED +"         |    ---/" + Style.RESET_ALL + Fore.LIGHTMAGENTA_EX + "  \|/ " + Style.RESET_ALL + Fore.RED +" \------/" + Style.RESET_ALL + Fore.LIGHTRED_EX + "______)")
+  print (Style.RESET_ALL + Fore.RED +"         |   |" + Style.RESET_ALL + Fore.LIGHTRED_EX + "(_"+Style.RESET_ALL + Fore.RED +"/_________\ " + Style.RESET_ALL + Fore.LIGHTRED_EX + "______)")
+  print (Style.RESET_ALL + Fore.RED +"         |   |   |  | |  |")
+  print ("         |   |   \  \ /  /")
+  print ("         |   |    \     /")
+  print ("         ( ( (     |___|" )
+  print ("          - - -" )
+def print_slow(str):
+  for letter in str:
+    sys.stdout.write(letter)
+    sys.stdout.flush()
+    time.sleep(0.1)
+def print_medium(str):
+  for letter in str:
+    sys.stdout.write(letter)
+    sys.stdout.flush()
+    time.sleep(0.07)
+def print_fast(str):
+  for letter in str:
+    sys.stdout.write(letter)
+    sys.stdout.flush()
+    time.sleep(0.04)
+#To remember title is "Terrible Fate"
+print("        ________________                                                         ____     ____           ____                   ")
+print("        |              |     ___________      ____  ____       ____  ____       |    |   |    |         |    |     ___________ ")
+print("        |_____    _____|    /  _______  \    |    |/ _   \    |    |/ _   \     |____|   |    |         |    |    /  _______  \  ")  
+print("             |    |        |  /       \  |   |      / \___\   |      / \___\     ____    |    |         |    |   |  /       \  |   ")
+print("             |    |        |  \_______/  |   |     /          |     /           |    |   |    |____     |    |   |  \_______/  |   ")
+print("             |    |        |   _________/    |    |           |    |            |    |   |    |     \   |    |   |   _________/   ")
+print("             |    |        |   |             |    |           |    |            |    |   |   /  \    \  |    |   |   |  ")
+print("             |    |         \   \________    |    |           |    |            |    |   |   |__|    |  |    |    \   \________ ")
+print("             |____|          \___________|   |____|           |____|            |____|   |__________/   |____|     \___________| ")
+print("     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
+print("                    ________________                          ____                                                                                           ")
+print("                   |                |                        |    |             ___________                                 _____                                       ")
+print("                   |    ____________|                 _______|    |_______     /  _______  \                      _________/     \                                                 ")
+print("                   |    |________                    |_______      _______|   |  /       \  |                    /                \__                                   ")
+print("                   |             |     ______  __            |    |           |  \_______/  |                  /     _______          |                                             ")
+print("                   |    _________|    /  ___  \  |           |    |           |   _________/                  |    _/       \_____    /                                           ")
+print("                   |    |            |  /   \    |           |    |           |   |                           |   /                  /                              ")
+print("                   |    |            |  \___/    |           |    |            \   \________                   \                   /                                                  ")
+print("                   |____|             \_______/\  \          |____|             \___________|                   \_________________/                                                  ")
+print("           ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
+print("")
+print("")
+print("")
+print("")
+print(".....................................................................................................................................")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+def print_slow(str):
+  for letter in str:
+    sys.stdout.write(letter)
+    sys.stdout.flush()
+    time.sleep(0.04)
+#This is the first bit of dialogue
+print_slow("YOU: WOOOOOOOOOOO! I'M FLYING!" )
+print("\n")
+print_slow("     AIN'T NOTHING GONNA STOP ME!")
+print("\n")
+print_slow("    *Crashes into cliff face that looks like a rock* ... *Or is it a rock that looks like cliff face?")
+print("\n")
+print_slow("     OOOOOOOF,THAT HURT! OH NO, OH NO, MY WINGS THEY'RE LIKE THE MCDONALDS ICE CREAM MACHINE. ABSOLUTELY BROKEN!")
+print("\n")
+print_slow("     *Screams while falling to death, pulls out bible*")
+print("\n")
+print_slow("     JESUS I KNOW I HAVE IGNORED YOU MY ENTIRE LIFE BUT WITH THESE LAST THREE SECONDS OF LIFE I WANT TO SAY,  'JESUS TAKE THE WHEEL'")
+print("\n")
+print_slow("     AAHAHHHHHHHHHJHHHHHJJHH!!!! THAT FLOOR IS REALLY CLOSE NOW!!")
+print("\n")
+print_slow("     *Hits floor* *squeaky toy squeaks*")
+print("\n")
+print_slow("     Uuuhguhguh, that hurt like a buttcheek on a stick.")
+print("\n")
+print_slow("     Where a.. *SQUEEEEAK*")
+print("\n")
+print_slow("     Where am I?")
+print("\n")
+print_slow("     Why am I so co... *SQUEEAK*")
+print("\n")
+print_slow("     Why am i so cold")
+print("\n")
+print_slow("*Dark looming shadow appears*")
+print("\n")
+print_slow("YOU: UMM, excuse me? Who are you? And where am I?")
+print("\n")
+
+print_slow("Evil Dark Figure Dude: I AM THE DARK, I AM THE EVIL. I AM THE DARKNESS LURKING IN THIS WORLD. AND YOU? YOU’RE NOTHING MORE THAN JUST A PUNY MORTAL! *SmAcKs LiPs* NOW DIE!!!!")
+print("")
+#This is the first fight sequence
+import random
+Hp = 10
+
+print_slow("The Dark Figure Stands there meanacingly")
+while True:
+  print("")
+  ChoIce = input(str("Do you want to HIT, OR RUN? "))
+  ChoIce = (ChoIce[0])
+  if ChoIce.lower() == "h":
+    Hp = Hp -1
+    print("You have", Hp, "Life Points remaining" )
+    if Hp == 0:
+      break
+  elif ChoIce.lower() == "r":
+    print_slow("You can't escape! You have to fight him!")
+if Hp == 0:
+  print_slow("The Dark Figure killed you! *SQUEEEEAAAAKKKK*")
+
+print("")
+print("")
+print("")
+#Now you've woken up and are out of your dream
+print_slow("UNKNOWN PERSON: WAKE UP YOU IDIOT WE'RE GONNA BE LATE!!!!")
+print("\n")
+print_slow("                C'MOOOOON, THE FESTIVAL STARTS IN 30 MINUTES!!")
+print("\n")
+print_slow("YOU:            Uhghghghgh, slow down... I had the weirdest dream right now. And how are you in my house?")
+print("\n")
+print_slow("UNKNOWN PERSON: I kinda sorta broke down your door. Also hurry up and get ready, you can talk to me about your 'dream' later")
+print("\n")
+print_slow("YOU:            Then what was that sqeaking I heard? ")
+print("\n")
+print_slow("UNKNOWN PERSON: Oh, that was me... I thought it would be funny to squeak a squeaky toy next to your ear.")
+print("\n")
+print_slow("YOU:            Well anyway, let me get ready real quick Elena")
+print("\n")
+print_slow("ELENA:          Ok, fine... I'll hold the door up until you get ready")
+print("\n")
+print_slow("YOU:            .... That girl is really something.....")
+print("\n")
+print_slow("*TIME SKIP TO FESTIVAL*")
+print("      *                                          *                                 ")
+print("   /     \                                     /   \                                              ")
+print("--/  ( )  \-------                  --------- / ( ) \----------                                   ")
+print("_/_________\_______\              /__________/_______\__________\                                                              ")
+print("                  | |      _       |  __                   __  |                  ")
+print("     ( )          | |     /|\      | |__|                 |__| |                   ")
+print("      _           | |    / | \     |          _            __  |                   ")
+print("     | |          | /   /  |  \    |         | |          |__| |                    ")
+print("_____|_|__________|/   /   |   \   |_________|_|_______________|                                              ")
+print("     (  (             /    |    \            )  )                                      ")
+print("      |  |           /     |     \           |  |                                ")
+print("      (  (          /      |      \           )  )                                 ")
+print("       \  \        /       |       \         /  /                                  ")
+print("        \  \______/        |        \_______/  /                                                  ")
+print("         \________         |         _________/                                               ")
+print_slow("ELENA:           Huh? A giant evil figure just fighting you?  ")
+print("\n")
+print_slow("YOU:             Yeah crazy rig-")
+print("\n")
+print_slow("ELENA:           You lost, didn't you?")
+print("\n")
+print_slow("YOU:             *Looks down in shame* ..... Yeah")
+print("\n")
+print_slow("ELENA:           Makes sense, you don't ever dream of winning. Come sit.")
+print("\n")
+print_slow("                 Look, I didn't mean nothing by it. You just have been acting weird lately.")
+print("\n")
+print_slow("YOU:             It's fine. I am just wondering why I had that dream")
+print("\n")
+print_slow("ELENA:           Well don't worry about it much. Lets just have some fun at the carnival *extends arm out to grab thine hand*")
+print("\n")
+print_slow("YOU:             *big blush* O-Ok...")
+print("\n")
+print_slow("*Time skip to a Ferris Wheel")
+print("\n")
+print_slow("ELENA:            Wow, the view up here is... gorgeous.")
+print("\n")
+print_slow("YOU:              Uh, yeah... kinda like you.")
+print("\n")
+print_slow("eLeNa:            WhAt DiD yOu SaY?")
+print("\n")
+print_slow("YOU:              UHHHHH, nothing I meant like the sunset.")
+print("\n")
+print_slow("ELENA:            Yea right tell me. You can't really say something that loud and expect me not to hear it.")
+print("\n")
+print_slow("YOU:              Umm, I called you gorgeous.")
+print("\n")
+print_slow("ELENA:            Well, thank you. But I'm going to be honest with you, I kinda want to tell you something.")
+print("\n")
+print_slow("YOU:              *Blushing severely* Uhh yeah?")
+print("\n")
+print_slow("ELENA:           I kinda sorta li--  BOOOOOOOOOOM")
+print("\n")
+print_slow("*Big boomy boi happens*")
+print("\n")
+print_slow("YOU:             WHAT WAS THAT?")
+print("\n")
+print_slow("ELENA:           Idk, maybe someone let a big one rip.")
+print("\n")
+print_slow("YOU:             I mean, considering the fact that there's more screaming than usual Im pretty sure it's not a fart.")
+print("\n")
+print_slow("ELENA:           Uhh, duh Sherlock I knew that, but what was i- BOOOOOOOOM")
+print("\n")
+print_slow("*Another big boomy boi happens")
+print("\n")
+print_slow("BOOOOOOOOOM BOOOOOOOM BOOOOOOOM")
+print("\n")
+print_slow("*Several explosions are heard throughout the city")
+print("\n")
+print_slow("YOU:            WHAT'S GOING ON?")
+print("\n")
+print_slow("ELENA:          I have no idea, but whatever happens we have to stay calm.")
+print("\n")
+print_slow("*FERRIS WHEEL BASE BLOWS UP AND THE FERRIS WHEEL STARTS TO ROLL*")
+print("\n")
+print_slow("ELENA:          NOW WE CAN PANIC")
+print("\n")
+print_slow("YOU:            I'VE ONLY SEEN THIS IN MOVIES, WE'RE ACTUALLY ROLLING! HURRY UP AND PUT ON YOUR SEAT BELT!")
+print("\n")
+print_slow("ELENA:          SEATBELTS ARE FOR CHUMPS")
+print("\n")
+print_slow("*The ferris wheel hits a pothole and jumps up almost knocking Elena out of the car pushing her out onto the side*")
+print("\n")
+print_slow("YOU:            HECK, WAIT I'M COMING")
+print("\n")
+print_slow("*You try to unbluckle your seatbelt but it gets stuck*")
+print("\n")
+print_slow("ELENA:          I BET YOU ARE, BUT MIND BEING FASTER? I'M SLIPPING")
+print("\n")
+print_slow("*You finally manage to unbuckle yourself but just as you reach Elena she falls*")
+print("\n")
+print_slow("YOU:            ELEEENAAAAAAAAA NOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
+print("\n") 
+print_slow("*The last thing you see is Elena's hand reaching out to you before she slips out of sight, straight to her death*")
+print("\n")
+print_slow("YOU:            Elena, no... why? This... this can't be happening.")
+print("\n") 
+print_slow("*The ferris wheel stops rolling, you don't try to brace yourself*")
+print("\n")
+print_slow("*The cart you're in hits the floor and you black out*")
+print_medium("YOU:               Uuughghg, what happened")
+print("\n")
+print_slow("                   Oh... yeah... Elena. Oh god, how long was I out for?")
+print("\n")
+print_slow("                   What happened to everyone?")
+print("\n")
+print_fast("*You look around, the entire city you lived in, the city you loved. Has been leveled. Everything is gone.*")
+print("\n")
+print_slow("                   O... Oh my god... what... who did this? ")
+print("\n")
+print_fast("LARGE BOOMING VOICE: HAHAHAHAHA, ONE SURVIVOR? HOW... UNFORTUNATE! YOU SEE, I DID THIS! I KILLED EVERYONE HERE! WANNA KNOW WHY?")
+print("\n")
+print_medium("YOU:                 Definitely not")
+print("\n")
+print_fast("LARGE BOOMING VOICE: WELL... THAT'S UNCONVENTIONAL! BUT NONETHELESS, MY NAME IS MISTER!")
+print("\n")
+print_medium("YOU:                 heh, heh, Mister? That's it? *snicker* No Mrs.? *giggle* Heck that, you're Mister Nuts")
+print("\n")
+print_fast("MISTER:             WHAT? NO, MY NAME'S JUST MISTER. family ditched when I was five. I never knew my last name. BUT THAT'S BESIDES THE POINT! GUESS WHAT I FOUND!")
+print("\n")
+print_fast("YOU:                A LIFE? A WIFE? SOME LICE?")
+print("\n")
+print_fast("MISTER:             WHAT, NO! STOP THIS MADNESS AT ONCE! NO, I FOUND YOUR ITTY BITTY FRIEND")
+print("\n")
+print_medium("*A drone comes in holding Elena's body*")
+print("\n")
+print_slow("YOU:                Elena... no...")
+print("\n")
+print_fast("YOU:                YOU MONSTER! YOU STUPID, WRECKLESS, SON OF A-")
+print("\n")
+print_medium("MISTER:             Now now child, No swearing on THIS christian minecraft server.")
+print("\n")
+print_medium("MISTER:             Anyways, the only way you can bring HER back is by using THIS rock. And YOUUU can't have it.")
+print("\n")
+print_fast("YOU:                Well at least tell me what it's called.")
+print("\n")
+print_medium("MISTER:             It's called the everstone")
+print("\n")
+print_medium("YOU:                Well that's a pretty cliche name isn't it.")
+print("\n")
+print_slow("MISTER:              I... I just made that up. Well then, ummmm... it's called stonever.")
+print("\n")
+print_medium("YOU:                You just flipped the words ever and stone.")
+print("\n")
+print_fast("MISTER               YOU KNOW WHAT!?!? I'M DONE WITH THIS GOOD BYE!")
+print("\n")
+print_medium("YOU:                 Hmmmm, tough crowd, tough crowd. Must've hit a touchy nerve there.")
+print("\n")
+print_medium("                    Anyways, I might as well try to find out where this 'Mister' guy lives. I need that everstone.")
+print("\n")
+print_fast("*Time skip to a shop on the outskirts of the city*")
+print("\n")
+print_medium("OLD MAN:             Hello there traveller, did you just come from the city? No one else came through. I'm pretty sure you're the only survivor.")
+print("\n")
+print_medium("YOU:                 I am, I'm on this 'epic quest' to get some 'everstone' to bring... someone REALLY important to me... back. Yeah, I need to get the stone from some Mister guy")
+print("\n")
+print_fast("OLD MAN:             Well then, if you're looking for Mister then look no further than over there")
+print("\n")
+print_fast("*The Old Man points at a mountian about 3 days of walking away. Dark clouds swirl around the mountain and there's signs of a ton of monsters.*")
+print("\n")
+print_medium("YOU:                Ouch, that seems fun.")
+print("\n")
+print_fast("OLD MAN:              Well it's dangerous to go alone TAAAKE this. *he presents an number of items*")
+character_Class = input(str(" Which one do you want: \n a stick, an Ifunny account, web shooters, or a sickly looking dagger: "))
+character_Class = (character_Class[0])
+if character_Class.lower() == ("stick"):
+  print("I want the stick.")
+  ClassType = 1
+elif character_Class.lower() == ("account"):
+  print("Give me the dank memes")
+  ClassType = 2
+elif character_Class.lower() == ("web shooters"):
+  print("I wanna be spider man")
+  ClassType = 3
+elif character_Class.lower() == ("dagger"):
+  print("I'm about to be sneaky dude.")
+  ClassType = 4
+print("\n")
+print_medium("OLD MAN:         By the way, what was your name again?")
+print("\n")
+NameCharacter = input(str("YOU:       Oh, it was... "))
+#this is the secret level thingy. 38 prints 56
+if NameCharacter == ("Rick Astley"):
+  print("NEVER GONNA GIVE YOU UP! (Congrats You Found A Secret.... :)")
+print("\n")
+print("OLD MAN:          Well then ", NameCharacter ," nice to meet you.")
+print("\n")
+print( NameCharacter ,":             And the same to you sir. Anyways, I gotta be on my way, goodbye and thank you for the gift.")
+print("\n")
+print_fast("*You leave the shop waving bye to the Old Man starting your perilous adventure*")
+print("\n")
+print( NameCharacter , ":    Elena, I'm doing this for you")
+print("\n")
+print_medium("                Granted I don't know what I'm doing. But if it's for you I'll do it.")
+print("\n")
+print_fast("*Some bushes near you start to rustle*")
+print("\n")
+print( NameCharacter , ":    Now what?")
+print("\n")
+print_fast(" ROOOOOOAOOOOOOOOOAAOOAR")
+print("\n")
+#this is the tuple for the monsters making it random
+monsterValues = random.randint (0,8)
+monsterTuple = ("Goblin", "Theif", "Evil Wizard","Baby Dragon", "Evil Cube Kevin", "Thanos Car", "Kevin's brother the dodecahedron", "Enchanted Danger Noodle", "Velvetra")
+#Hp depends on class
+if ClassType == 1:
+  PlayerHealth = 20
+elif ClassType == 2:
+  PlayerHealth == 50
+elif ClassType == 3:
+  PlayerHealth == 30
+elif ClassType == 4:
+  PlayerHealth == 25
+#This is deciding Monster Health
+if monsterTuple[monsterValues] == 0:
+  monsterHealth = 20
+elif monsterTuple[monsterValues] == 1:
+  monsterHealth = 15
+elif monsterTuple[monsterValues] == 2:
+  monsterHealth = 10
+elif monsterTuple[monsterValues] == 3:
+  monsterHealth = 25
+elif monsterTuple[monsterValues] == 4:
+  monsterHealth =  15
+elif monsterTuple[monsterValues] == 5:
+  monsterHealth = 30
+elif monsterTuple[monsterValues] == 6:
+  monsterHealth =  16
+elif monsterTuple[monsterValues] == 7:
+  monsterHealth = 24
+elif monsterTuple[monsterValues] == 8:
+  monsterHealth = 27
+#This is the fight sequence portion
+while True:
+  print("A wild ", monsterTuple[monsterValues]," appeared!")
+  print("Do you want to hit the",monsterTuple[monsterValues],"? press n to exit")
+  ChoIce = input(str("Yes or no? "))
+  ChoIce = (ChoIce[0])
+  if ChoIce.lower() == "y":
+    if monsterTuple[monsterValues] == 1 :
+      Goblin()
+      PlayerHealth = PlayerHealth - 15
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 2:
+      Thief()
+      PlayerHealth = PlayerHealth - 10
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 3:
+      Wizard()
+      PlayerHealth = PlayerHealth - 7
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 4:
+      babyDragon()
+      PlayerHealth = PlayerHealth - 12
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 5:
+      EvilCube()
+      PlayerHealth = PlayerHealth - 3
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 6:
+      ThanosCar()
+      PlayerHealth = PlayerHealth - 9
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 7:
+      dodecahedrenBrother()
+      PlayerHealth = PlayerHealth - 4
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 8:
+      agressiveSnake()
+      PlayerHealth = PlayerHealth - 15
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 9:
+      velvetraAttack()
+      PlayerHealth = PlayerHealth - 13
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    print("You have", PlayerHealth , "Life Points remaining")
+    print("Well that hurt")
+    if PlayerHealth == 0:
+      print("I can't give up, I need to keep going for Elena")
+      Hp = 5
+  elif ChoIce.lower() == "n":
+    print("Imma go now")
+    break
+print("\n")
+print(NameCharacter ,":     Wooooo, that was a fight if I've ever seen it. Looks like I'm a little bit closer to the mountain.")
+print("\n")
+print(NameCharacter ,":     Guess I'll set up camp for today. I made it a little bit closer to the mountain. *Sun starts setting* Oh well, guess it's a good night for me.")
+print("\n")
+print_fast("*Night passes by without an inturuption and you get a good nights sleep*")
+print("\n")
+print(NameCharacter ,":    MMMAWAAAAAAAA, That was a good night of sleep. Wish I had some coffee. Maybe even some green tea. Sadly I'm out in the wild and have no means of getting my hands on coffee or green tea.")
+print_medium("         Wouldn't it be funny if there was some coffee around and it was a trap set by some sentient monster... heh, yeah... Oh look a mug!")
+print_medium("         I'm just gonna completely disregard what I just said and go straight for that mug.")
+print("\n")
+print_fast("*You walkeed over to the mug and the bushes behind it start rustling*")
+print("\n")
+print(NameCharacter , ":      I should've listened to my own advice.")
+print("\n")
+print_fast("ROOAOOAOOROROWOW")
+while True:
+  print("A wild ", monsterTuple[monsterValues]," appeared! again")
+  print("Do you want to hit the",monsterTuple[monsterValues],"? press n to exit")
+  ChoIce = input(str("Yes or no? "))
+  ChoIce = (ChoIce[0])
+  if ChoIce.lower() == "y":
+    if monsterTuple[monsterValues] == 1 :
+      Goblin()
+      PlayerHealth = PlayerHealth - 15
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 2:
+      Thief()
+      PlayerHealth = PlayerHealth - 10
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 3:
+      Wizard()
+      PlayerHealth = PlayerHealth - 7
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 4:
+      babyDragon()
+      PlayerHealth = PlayerHealth - 12
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 5:
+      EvilCube()
+      PlayerHealth = PlayerHealth - 3
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 6:
+      ThanosCar()
+      PlayerHealth = PlayerHealth - 9
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 7:
+      dodecahedrenBrother()
+      PlayerHealth = PlayerHealth - 4
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 8:
+      agressiveSnake()
+      PlayerHealth = PlayerHealth - 15
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 9:
+      velvetraAttack()
+      PlayerHealth = PlayerHealth - 13
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    print("You have", PlayerHealth , "Life Points remaining")
+    print("Well that hurt")
+    if PlayerHealth == 0:
+      print("I can't give up, I need to keep going for Elena")
+      Hp = 5
+  elif ChoIce.lower() == "n":
+    print("Imma go now")
+    break
+print("\n")
+print("\n")
+print(NameCharacter , ":       Uuuughhh, I should've known that was a trap. But.. y'know Shoulda, Coulda, and Woulda")
+print("\n")
+print_medium("       Oh well, I better get to walking.")
+print("\n")
+print_fast("*Time skip to the sunsetting, You've made it two days and you're one day away from Mister*")
+print("\n")
+print(NameCharacter , ":    *yawn*    That was a long walk. My feets hurt and I still have one more day. I don't even have a bandaid for this cut I got. *You look down and see a small cut on your arm* ehh, it wont be that bad.")
+print("\n")
+print_medium("      I guess I'll set up camp now. I'm exhausted. *You set up camp and settle in for the night* ")
+print("\n")
+print_fast(" REEEEOOOORAOAARRRRROORAOR!!!!")
+print("\n")
+print(NameCharacter , "ugggg, five more minutes mooooooo0oooooom.")
+print("\n")
+print_medium(" ROOOOOAOROAOQQWOOWOIHIOGHSIPHGFoUIHGoifngaihfgiinnoihoiaHFO9HIQOI[ohaopigh!")
+print("\n")
+print(NameCharacter , "FINE MOM, I'LL GO TO SCHOOL")
+print_fast("*You get up and you come face to face with a monster*")
+while True:
+  print("A wild ", monsterTuple[monsterValues]," appeared!")
+  print("Do you want to hit the",monsterTuple[monsterValues],"? press n to exit")
+  ChoIce = input(str("Yes or no? "))
+  ChoIce = (ChoIce[0])
+  if ChoIce.lower() == "y":
+    if monsterTuple[monsterValues] == 1 :
+      Goblin()
+      PlayerHealth = PlayerHealth - 15
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 2:
+      Thief()
+      PlayerHealth = PlayerHealth - 10
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 3:
+      Wizard()
+      PlayerHealth = PlayerHealth - 7
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 4:
+      babyDragon()
+      PlayerHealth = PlayerHealth - 12
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 5:
+      EvilCube()
+      PlayerHealth = PlayerHealth - 3
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 6:
+      ThanosCar()
+      PlayerHealth = PlayerHealth - 9
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 7:
+      dodecahedrenBrother()
+      PlayerHealth = PlayerHealth - 4
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 8:
+      agressiveSnake()
+      PlayerHealth = PlayerHealth - 15
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    elif monsterTuple[monsterValues] == 9:
+      velvetraAttack()
+      PlayerHealth = PlayerHealth - 13
+      if ClassType == 1:
+        monsterHealth - 5
+      elif ClassType == 2:
+        monsterHealth - 20
+      elif ClassType == 3:
+        monsterHealth - 10
+      elif ClassType == 4:
+        monsterHealth - 15
+    print("You have", PlayerHealth , "Life Points remaining")
+    print("Well that hurt")
+    if PlayerHealth == 0:
+      print("I can't give up, I need to keep going for Elena")
+      Hp = 5
+  elif ChoIce.lower() == "n":
+    print("Imma go now")
+    break
+print("\n")
+print("\n")
+print(NameCharacter , ":   MANNNNNN, I just wanted to sleep. But considering the mosnter left I guess I can go to sleep.")
+print("\n")
+print_fast("*You go to sleep with no interuptions and wake up in the morning*")
+print("\n")
+print(NameCharacter , "mmmmmmmmmmmmmn, That wasn't very comfortable. Why is it so warm.")
+print("\n")
+print_fast("*you look up and you're at the base of the mountain. Mister is just up there*")
+print(NameCharacter , "Woah, how did I get here.")
+print("\n")
+print_fast("*You turn around you see the monsters you tried to fight. They want Mister gone too*")
+print("\n")
+print(NameCharacter , ":  Wow, thanks guys/girls/non-binary. That's really nice considering I tried to fight you.")
+print("\n")
+print_fast("*You wave goodbye and make your way up the mountain*")
+print(NameCharacter , ":    Elena... this is for you")
+print("\n")
+print_fast("MISTER:         WELL WELL WELL... HAVE YOU COME TO DIEEEEEEEE? WELCOME TO MY CLUBHOUSE!")
+print("\n")
+print(NameCharacter , ":    HI MISTER NUTS, Howzit goin faaaaaaam. What do you mean by clubhouse? This is a DUMP! hehehehe roasted.")
+print("\n")
+print_medium("       Also, where's the Everstone. I want it.")
+print("\n")
+print_fast("MISTER:      AHAHAHHAHAHAHHAHQAHAHAHHAHA, YOU STILL BELIEVE IN THE EVERSTONE!!!! IT WAS A LIE!! I MADE IT UP!!! JUST TO MAKE YOU BELEIVE IN ONE LAST LIE!!!!! DID YOU REALLY THINK YOU COULD BRING HER BACKK!! DID YOU REALLY THINK IT WOULD WORK LIKE THAT!!!! YOU REALLY ARE STUPID!!! AHAHHAHAHAHAHHAHAHAHHAHAHHARHHAHAA!")
+print("\n")
+print(NameCharacter , ":      You... you monster. You insane, heartless monster. No wonder you blew up the city. You couldn't handle everyone else beign sane. You sick, twisted, monster!")
+print("\n")
+print_fast("MISTER:     THAT'S KINDA THE POINT ISN'T IT!! NO MATTER WHATT!! WE'RE ALL GONNA MEET THE SAME TERRIBLE FATE!!! JUST SOME PEOPLE FASTER THAN OTHERS!! AND YOU!!?!?!? YOU'RE GONNA DIE RIGHT HERE!! RIGHT NOW!!!")
+print_fast("*Mister moves faster than you can see, he throws a dagger straight at you, you can't move and you feel it enter your body*")
+print("\n")
+print(NameCharacter , ":      *cough* *cough*   No... nooo... this, this can't happen... not today. I haven't saved anyone... I haven't gotten anywhere... *cough* *cough* Elena...")
+print( NameCharacter , "has died. That's it. No one can win this game. You all suffer a TERRIBLE FATE!*")
