@@ -5,39 +5,70 @@ Game Requirements
 Ten Points Each
 
 1.	Must have a defined genre with a plot/narrative/point
-    
+    10 (at the expense of gameplay unfortunately)
 2.	Create & use at least 3 functions
-    
+    7 (created many functions, but I don't think any were actually called up)
 3.	Make ASCII art (must be original)
-    
+    9 (This should be a ten, but sadly one can only see the ASCII art in the code mainly)
 4.	Have a life point system
-    
+    7 (has one but seems broken)
 5.	Have NPC interaction
-    
+    10 (not much but there is)
 6.	Use the random variable function
-    
+    9 (yes, but something is wrong with it)
 7.	Use while-loops
-  
+    9 (but I don't think it worked the way it was supossed to)
 8.	Have distinct code blocks
-    
+    0 (It's just one big block o' code)
 9.	Comment above code blocks and elsewhere when necessary
-    
+    7 (There's some)
 10.	Have variable/identifiers that are self-evident (e.g., lifePoints = 20)
-    
+    10
 
 Bonus Features
 Five Points Each
 •	Have more than 3 characters
-  
+    5
 •	Venture through more than 10 screens/sections/rooms
- 
+     0
 •	Include a secret level
-  
-
+     0
+   
 ------------------------------------------------------------------------------------------------------
-Total: 
+Total: 83 - 10 for being late = 73
 
 
 Student who did more or less will have a different grade than what is added up to here
 
 Comments:
+
+Have someone edit for English issues like spelling, grammar, and syntax. Remember, this is a text based game, so words matter.
+I see a lower case i in the opening for instance.
+
+There is A LOT of text/story before you get to make a choice after the first fighting sequence. You either need to break this up
+with art or have more choices along the way.
+
+We'll see if the dagger I got from the old man does anything later. Nope, the inventory doesn't seem to work.
+
+Nice touch on the name addition.
+
+Um, nothing random comes up when I hit Evil Cube Kevin? It says 0 Life Points and keeps looping. Any ASCII art here? Okay,
+morning and same loop with Kevin. Um, okay, walked, went to bed, and again with Evil Kevin! Is this supposed to be random?
+
+Um, and then I died. Okay, I'm going to try this one more time to see if I see any of that awesome ASCII art that was created
+for this project and if I can get more than Evil Cube Kevin to appear.
+
+I really wish I could skip forward some of this text on the replay. This scrolling of the text is too much and not should not
+have been used for the whole thing. UPDATE: Repl.it updated on me, so I had to restart this again to just try and play through
+the second time--now my third time. It has been over five minutes of scrolling text!!
+
+Okay, on replay I got another monster but now it's repeating the same: wild Kevin's brother the dodechedron. I get no ASCII 
+with this one either and I'm automatically at 0 life points. Is there any random subtracting here or am I at zero from the
+first fight that I had to do?
+
+Third time, a wild Goblin, still I have 0 life points, and no ASCII art. Yep, the goblin is repeating on this one.
+
+And dead again.
+
+
+
